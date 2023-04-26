@@ -10,6 +10,13 @@
  <body>
     <div class="container">
         <form action="https://formsubmit.co/floresail.info@gmail.com" method="POST">
+           
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display:none;">
+
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
             <h3>GET IN TOUCH</h3>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Email Address" required>
