@@ -27,7 +27,17 @@ form h3{
     font-weight: 800;
     margin-bottom: 20px;
 }
-
+h1 {
+    color:#fff;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+p{
+    color:#fff;
+    display: flex;
+    font-size: 40px;
+}
 form input, form textarea{
     border: 0;
     margin: 1px 0;
