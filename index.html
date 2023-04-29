@@ -1,31 +1,32 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us Test</title>
+    <title>Date Picker</title>
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-    <div class="container">
-        <form action="https://formsubmit.co/floresail.info@gmail.com" method="POST">
-           
-            <!--Honeypot-->
-            <input type="text" name="_honey" style="display: none;">
-
-            <!--Disable Captcha-->
-            <input type="hidden" name="_captcha" value="false">
-
-            <input type="hidden" name="_next" value="https://2salted.github.io/Contactus.test/success.html">
-
-            <h3>GET IN TOUCH</h3>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+  </head>
+  <body>
+    <h1>Date Picker Example</h1>
+    <form action="https://formsubmit.co/floresail.info@gmail.com" method="POST">
+    <div class="date-picker-container">
+      <input type="text" name="Date" id="date" placeholder="Select a date" required>
+      <div class="date-picker">
+        <div class="date-picker-header">
+          <button class="date-picker-nav-left">&lt;</button>
+          <div class="date-picker-title"></div>
+          <button class="date-picker-nav-right">&gt;</button>
+        </div>
+        <div class="date-picker-weekdays">
+        </div>
+        <div class="date-picker-days"></div>
+      </div>
+    </div>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Email Address" required>
             <input type="text" id="phone" name="phone"placeholder="Phone Number" required>
             <textarea id="message" name="comments, questions" rows="4" placeholder="How can we help you?" required></textarea>
             <button type="submit">Send</button>
-        </form>
-    </div>
- </body>
- </html>
+</form>
+    <script src="script.js"></script>
+  </body>
+</html>
